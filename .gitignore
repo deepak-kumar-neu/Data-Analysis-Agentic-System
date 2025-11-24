@@ -1,0 +1,108 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Logs
+*.log
+logs/
+results/logs/
+
+# Data (except sample data)
+data/
+data/cache/
+data/temp/
+*.csv
+*.xlsx
+*.db
+*.sqlite
+
+# Results
+results/
+outputs/
+!results/.gitkeep
+
+# Archive and temporary files (not needed for submission)
+archive/
+temp/
+tests/
+
+# Technical documentation source files
+technical_specification.tex
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Docker
+*.env.docker
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Profiling
+*.prof
+
+# Temporary files
+*.tmp
+temp/

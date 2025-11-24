@@ -1,0 +1,137 @@
+# Default Configuration for Data Analysis Agentic System
+
+# System Settings
+system:
+  name: "Data Analysis Agentic System"
+  version: "1.0.0"
+  environment: "development"
+  
+# Orchestration Settings
+orchestration:
+  process_type: "sequential"  # sequential, parallel, hierarchical
+  max_iterations: 3
+  timeout_seconds: 300
+  enable_feedback_loops: true
+  enable_memory: true
+  verbose: true
+  
+# Agent Configuration
+agents:
+  controller:
+    role: "Data Analysis Coordinator"
+    allow_delegation: true
+    memory: true
+    max_retries: 3
+    
+  data_collection:
+    role: "Data Collection Specialist"
+    allow_delegation: false
+    memory: true
+    max_retries: 2
+    
+  data_processing:
+    role: "Data Processing Expert"
+    allow_delegation: false
+    memory: true
+    max_retries: 2
+    
+  analysis:
+    role: "Data Analysis Expert"
+    allow_delegation: false
+    memory: true
+    max_retries: 2
+    
+  visualization:
+    role: "Data Visualization Specialist"
+    allow_delegation: false
+    memory: true
+    max_retries: 2
+    
+  quality_assurance:
+    role: "Quality Assurance Specialist"
+    allow_delegation: false
+    memory: true
+    max_retries: 1
+
+# Tool Configuration
+tools:
+  data_retrieval:
+    enabled: true
+    max_file_size_mb: 100
+    supported_formats: ["csv", "xlsx", "json", "parquet", "sql"]
+    cache_enabled: true
+    
+  data_cleaning:
+    enabled: true
+    handle_missing: "auto"  # auto, drop, fill, interpolate
+    outlier_method: "iqr"  # iqr, zscore, isolation_forest
+    duplicate_strategy: "first"  # first, last, drop_all
+    
+  statistical_analysis:
+    enabled: true
+    significance_level: 0.05
+    correlation_threshold: 0.3
+    enable_advanced_tests: true
+    
+  visualization:
+    enabled: true
+    default_style: "seaborn"
+    figure_size: [12, 8]
+    dpi: 300
+    formats: ["png", "svg", "html"]
+    
+  insight_generator:
+    enabled: true
+    min_confidence: 0.6
+    max_insights: 10
+    prioritize_by: "significance"  # significance, business_impact, novelty
+    
+  web_search:
+    enabled: false  # Set to true if API key available
+    max_results: 5
+    search_engine: "google"  # google, bing, duckduckgo
+    
+  report_generator:
+    enabled: true
+    format: "html"  # html, pdf, markdown
+    include_visualizations: true
+    include_raw_data: false
+
+# Error Handling
+error_handling:
+  strategy: "retry_with_fallback"  # continue, retry, retry_with_fallback, fail
+  max_retries: 3
+  retry_delay_seconds: 2
+  exponential_backoff: true
+  enable_circuit_breaker: true
+  circuit_breaker_threshold: 5
+  
+# Memory Management
+memory:
+  type: "conversation"  # conversation, entity, summary
+  max_history: 100
+  persist_to_disk: true
+  storage_path: "data/cache/memory"
+  
+# Performance Settings
+performance:
+  parallel_workers: 4
+  batch_size: 1000
+  enable_caching: true
+  cache_ttl_seconds: 3600
+  memory_limit_mb: 4096
+  
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_logging: true
+  console_logging: true
+  log_file: "results/logs/system.log"
+  
+# Output Settings
+output:
+  directory: "results"
+  create_timestamp_folder: true
+  save_intermediate_results: true
+  compression: false
