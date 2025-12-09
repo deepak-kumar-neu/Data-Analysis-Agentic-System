@@ -67,13 +67,13 @@ This project implements an agentic AI system for data analysis using CrewAI. The
 
 ## ✨ Key Features
 
-### 🤖 **5 Specialized Agents**
+### 🤖 **6 Specialized Agents**
 1. **Controller Agent** - Orchestrates workflow, handles errors, makes decisions
 2. **Data Collection Agent** - Retrieves and validates data from multiple sources
 3. **Data Processing Agent** - Cleans and transforms data
 4. **Analysis Agent** - Discovers patterns and generates insights
 5. **Visualization Agent** - Creates compelling visual narratives
-6. **Quality Assurance Agent** (NEW) - Validates results and ensures accuracy
+6. **Quality Assurance Agent** - Validates results and ensures accuracy
 
 ### 🛠️ **7+ Integrated Tools**
 
@@ -82,8 +82,8 @@ This project implements an agentic AI system for data analysis using CrewAI. The
 2. **Data Cleaning Tool** - Handle missing values, outliers, duplicates
 3. **Statistical Analysis Tool** - Comprehensive statistical tests
 4. **Visualization Tool** - Multiple chart types with auto-formatting
-5. **Web Search Tool** (NEW) - Real-time data enrichment
-6. **Report Generator Tool** (NEW) - Professional PDF/HTML reports
+5. **Web Search Tool** - Real-time data enrichment
+6. **Report Generator Tool** - Professional PDF/HTML reports
 
 **Custom Tools:**
 7. **AI-Powered Insight Generator** - Advanced pattern recognition with ML
